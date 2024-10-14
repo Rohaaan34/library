@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Моя Библиотека</h1>
+    <button id="addBookBtn">Новая Книга</button>
+
+    
+    <dialog id="bookForm">
+        <form id="form">
+            <label>Автор: <input type="text" id="author" required></label><br>
+            <label>Название: <input type="text" id="title" required></label><br>
+            <label>Количество страниц: <input type="number" id="pages" required></label><br>
+            <label>Статус прочтения:
+                <select id="readStatus">
+                    <option value="прочитано">Прочитано</option>
+                    <option value="не прочитано">Не прочитано</option>
+                </select>
+            </label><br>
+            <button type="submit">Добавить</button>
+            <button type="button" id="closeForm">Отмена</button>
+        </form>
+    </dialog>
+
+    
+    <div id="library"></div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
